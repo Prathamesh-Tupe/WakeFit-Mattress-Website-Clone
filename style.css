@@ -1,0 +1,793 @@
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f0f0ff;
+    overflow-x: hidden;
+}
+
+/*---------Start of header and navbar styling---------*/
+
+.offer-header{
+    width: 100%;
+    background-color: #00004d;
+    color: white;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-offers-p-1{
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.message-div{
+    background-color: #4d03bc;
+    padding: 0.8em ;
+    position: fixed;
+    right: 3em;
+    bottom: 2em;
+    border-radius:8em;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 90%;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 8vh;
+    background-color: #4d03bc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.hamburger-img, .home-logo-img, .search-img, .cart-img, .coin-img{
+    height: 4vh;
+    padding: 0.7em;
+    border-radius: 50%;
+}
+
+.search-img:hover, .cart-img:hover{
+    height: 4vh;
+    padding: 0.7em;
+    border-radius: 50%;
+    background-color: #190052;
+}
+
+.navbar-link{
+    color: white;
+    font-size: 1vw;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/*---------End of header and navbar styling---------*/
+
+/*---------Start of main body styling---------------*/
+
+/*------------ Start of filter Styling---------*/
+.filter-container{
+    background-color: white ;
+    width: 17%;
+    height: auto;
+    position: absolute;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: hidden;
+}
+
+.filter-options-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.filter-heading{
+    font-size: 1em;
+}
+
+.reset-filter-button{
+    font-size: 0.8em;
+    border: none;
+    background: transparent;
+    color: #4d03bc;
+    cursor: pointer;
+}
+
+.price-range{
+    font-size: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+.filter-price{
+    font-size: 0.9em;
+    margin-top: 1.5em;
+    margin-left: 1em;
+}
+
+#rangeSlider{
+    margin-top: 1em;
+    margin-left: 1em;
+    width: 12vw;
+}
+
+.range-bar-buttons{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+
+/* Basic Range Slider Styles */
+input[type="range"] {
+    -webkit-appearance: none; /* Removes default styling */
+    appearance: none;
+    width: 100%;
+    height: 20px;
+    background: white; /* Light gray track background */
+    border-radius: 5px;
+    outline: none;
+  }
+
+  /* Track (purple) */
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: #4d03bc;
+    border-radius: 5px;
+  }
+
+  input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #4d03bc;
+    border-radius: 5px;
+  }
+
+  /* Slider Thumb (purple circle) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px; /* Adjust for vertical alignment */
+    border: 1px solid #6600ff;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: purple;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+.apply{
+    background-color: #4d03bc;
+    border: none;
+    color: white;
+    padding: 0.5em 1.2em;
+    font-size: 1vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rangebar-reset{
+    background: none;
+    border: none;
+    color: black;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.filter-options-3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin: 1em 2em;
+    font-size: 1em;
+    color: gray;
+    
+}
+
+.filterOption{
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.filterOption:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.comfort{
+    font-size: 1.5vw;
+    color: black;
+}
+
+
+.filter-options-4{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    margin: 1em 2em;
+    font-size: 1em;
+    color: gray;
+   
+}
+
+.Height{
+    font-size: 1.2vw;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+/*------------ End of filter Styling---------*/
+
+
+/*---------Start of Features body styling---------------*/
+.features-container{
+    margin: 1vh 1vw;
+    margin-left: 18%;
+    height: 15vh;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.trial_img, .shipping-img, .warranty-img, .tape-img{
+     height: 80%;
+}
+
+.features-div{
+    height: 80%;
+    width: 23%;
+    border: 2px solid lightgray;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+}
+
+.features-img, .features-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-img{
+    background-color: #eee6ff;
+}
+
+.features-text{
+    padding-right:1em;
+    font-size: 1.2vw;
+    color: gray;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtext {
+    font-weight: normal;
+    font-size: 0.9vw;
+    margin-top: 10px; /* Optional: add spacing between lines */
+}
+/*---------End of Features body styling---------------*/
+
+
+/*---------Start of mattress size and type selection part styling----------*/
+.mattress-selection-body{
+    width: 100%;
+    height: 30vh;
+    margin-left: 18%;
+}
+
+.selection-text{
+    font-size: 2.5vw;
+    font-weight: bolder;
+    padding-top: 2.2vh;
+}
+
+.selection-container{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1.2vh;
+}
+
+.size, .type{
+  display: flex;
+  align-items: center;
+}
+
+.size-para, .type-para{
+    font-size: 1.4vw;
+    font-weight: bold;
+}
+
+.size-selection, .type-selection{
+  display: flex;
+  gap: 1%;
+}
+
+.size-button, .type-button {
+    border: 1px solid #6600ff;
+    color: #6600ff;
+    padding: 0.8vh 0.8vw;
+    border-radius: 6px;
+    font-size: 1.1vw;
+}
+
+.size-button:hover , .type-button:hover {
+    border: none;
+    color: white;
+    background-color: #6600ff;
+    padding: 0.8vh 0.8vw;
+    border-radius: 6px;
+    font-size: 1.1vw;
+}
+
+
+/*---------- Start of product cards styling -----------*/
+.pro-cards-container{
+    margin: 0.8em;
+    margin-top: 0px;
+    margin-left: 18vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4 , 19vw);
+    column-gap: 0.8vw;
+    row-gap: 2em;
+    overflow: hidden;
+}
+
+.pro-card{
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5vh;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-pro-description{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    padding-left: 1.2vw;
+    overflow: hidden;
+}
+
+.pro-card-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bestseller-div{
+   background-color: black;
+   opacity: 50%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding: 1.2vh 1.4vw;
+   border-bottom-right-radius: 15px;
+}
+
+.bestseller-text{
+    color: white;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.review-container{
+    position: absolute;
+    padding: 0.5em;
+    bottom: 20px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 80%;
+   /* flex-grow: 1; /* Takes up remaining space */
+  flex-shrink: 1; /* Shrinks if needed */
+}
+
+.review{
+   font-size: 1vw;
+   color: gray;
+}
+
+.fav-container{
+    position: absolute;
+    bottom: 1.5vh;
+    right: 1vw;
+    background-color: white;
+    padding: 0.5vw;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 75%;
+}
+
+.bed-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-pro-info{
+    font-size: 1.1vw ;
+    font-weight: 550;
+    color: rgb(116, 116, 116);
+}
+
+.card-pro-features{
+    margin-top: 0.5vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8vh;
+    font-size: 1vw;
+    color: rgb(178, 178, 178);
+}
+
+.card-pro-feature-1, .card-pro-feature-2, .card-pro-feature-3{
+   font-size: 0.9vw;
+}
+
+.back{
+    height: 1.2vw;
+}
+
+.size-button-1, .size-button-2, .size-button-3{
+   background-color: transparent;
+   border: 1px solid black;
+   padding: 0.4vh 0.8vw;
+   border-radius: 15px;
+   font-size: 0.8vw;
+   margin: 0.8em 0em;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card-pro-sizes{
+    display: flex;
+    column-gap: 0.5vw;
+}
+
+.price{
+    font-size: 2vw;
+}
+
+.price-previous{
+    font-size: 1vw;
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 0.3vw;
+}
+
+.discount{
+  color: rgb(22, 211, 22);
+  font-size: 1vw;
+  margin-left: 1em;
+}
+
+.card-pro-best-price-button{
+    background-color: #f4edfd;
+    margin-bottom: 1.8vh;
+    margin-top: 2vh;
+    margin-right: 1.2vw;
+    border-radius: 4px;
+}
+
+.best-price-button{
+    font-size: 1vw;
+    background-color: #f4edfd;
+    border: none;
+    color: #6600ff;
+    padding: 1vh 3vw;
+    margin-bottom: 0.2vh;
+}
+/*---------- End of product cards styling -----------*/
+
+/*---------- Start of Customer Testimonials Styling -----------*/
+.testimonial-heading{
+    background-color: black;
+}
+
+.heading-tes{
+    color: white;
+    font-size: 3vw;
+    padding: 4vh 2vw 0px 4vw;
+}
+
+.testimonial-container{
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4vw;
+}
+
+.testimonial-img{
+   height: auto;
+   width: 50vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.testo-ajay-img{
+    object-fit: cover;
+}
+
+.testimonial-card-img{
+     height: 11vw;
+     border-radius: 5px;
+}
+
+.all-tesimonials{
+    height: 70vh;
+    width: 21vw;
+    overflow-y: scroll;
+}
+
+.card-name{
+    margin-top: 1.2vh;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.card-review{
+    margin-top: 1vh;
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 8vh;
+}
+
+.all-tesimonials::-webkit-scrollbar {
+    width: 0.6vw; 
+  }
+  
+  .all-tesimonials::-webkit-scrollbar-track {
+    background: #e0e0e0; 
+    border-radius: 10px;
+  }
+  
+  .all-tesimonials::-webkit-scrollbar-thumb {
+    background-color: rgb(212, 138, 0); 
+    border-radius: 10px;
+  }
+  
+  .all-tesimonials::-webkit-scrollbar-thumb:hover {
+    background-color: orange;
+  }
+
+.factory-vid-container{
+   width: 100%;
+   margin-bottom: 2vh;
+  }
+
+.fac-img{
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+/*---------- End of Customer Testimonials Styling -----------*/
+
+/*----------- FAQ -------------*/
+.faq-container{
+    background-color: rgb(226, 241, 247); 
+    padding: 1.3vw; 
+    margin-bottom: 2vh;  
+}
+
+.faqs{
+    font-size: 1vw;
+}
+/*----------- FAQ -------------*/
+  
+/*----------- Footer 1 Styling -----------*/
+.footer-1-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #001132;
+    padding: 8vh 5vw;
+}
+
+.footer-1-links-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.links-footer-1{
+    font-size: 1.3vw;
+    color: white;
+    font-weight: bold;
+}
+
+.social-media-logos{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 1vw;
+    font-size: 0.9vw;
+    color: white;
+}
+
+.footer-1-links-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.links-footer-2{
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.footer-1-links-3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.links-footer-3{
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+.footer-1-links-4{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.help-address{
+    color: white;
+    font-size: 1.3vw;
+}
+/*----------- Start of footer 2 styling ---------*/
+.footer-2-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #BBAFD1;
+    padding: 8vh 5vw;
+}
+
+.footer-2-links-1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.retail-stores, .DIY, .des-sci{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.fotter-2-links-1, .retail-store-location, .science-text{
+    color: rgb(92, 92, 92);
+    font-size: 1.3vw;
+}
+
+.footer-2-links-2{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.bestsellers-cities, .shop-by-room{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.bestseller-by-city, .shop-for-room{
+    color: rgb(92, 92, 92);
+    font-size: 1.3vw;
+}
+
+
+.footer-2-links-3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.category-mattresses, .category-beds, .category-accessories, .category-furnitures{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+.category-mattresses-text, .category-beds-text, .category-accessories-text, .category-furnitures-text{
+    color: rgb(92, 92, 92);
+    font-size: 1.3vw;
+}
+
+.footer-2-links-4{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    width: 15%;
+}
+
+.payment-methods, .trusted-websites{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+.payment-logos{
+   width: 5vw;
+   border-radius: 15px;
+}
+
+.payment-methods-img{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5vw;
+}
+
+.trusted-websites-img{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw;
+}
+
+.trusted-logo{
+    width: 5vw;
+    border-radius: 15px;
+}
+
+.payment-methods-text, .trusted-websites-text{
+    color: rgb(92, 92, 92);
+    font-size: 1.3vw;
+}
+
+/*----------- Start of Footer 3 --------------*/
+
+.copyright{
+    font-size: 1.3vw;
+    padding: 2em 2em 3em 4em;
+}

@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+
+@media (min-width : 768px) and (max-width : 3000px){
+    .coin-logo{
+        display: none;
+     }
+     
+     .pro-search{
+         display: none;
+     }
+
+     .search-img{
+        fill: #ffff;
+    }
+    .pro-cards-container1{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    
+    .search-img{
+        fill: #ffff;
+    }
+
+    .comfort{
+        font-size: 2.3vw;
+    }
+
+    .Height{
+        font-size: 1.5vw;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .apply{
+        font-size: 1.6vw;
+    }
+
+    .filterOption{
+        font-size: 1.7vw;
+    }
+    
+    .filter-container{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
+    }
+
+    .features-container{
+      height: 25vh;
+    }
+    
+    .features-img{
+       background-color: white;
+        width: 20vw;
+    }
+
+    .features-text{
+        font-size: 1.1vw;
+        color: gray;
+        font-weight: bolder;
+    }
+
+    .subtext{
+        display: none;
+    }
+
+    .features-div{
+        border: none; 
+        display: flex;
+        flex-direction: column;  
+    }
+
+    .trial_img, .shipping-img, .warranty-img, .tape-img{
+        height: 8vw;
+    }
+
+    .selection-text{
+        font-size: 3.6vw;
+        font-weight: bolder;
+        padding-top: 2.2vh;
+    }
+    
+    .selection-container{
+        margin-top: 2vh;
+        display: grid;
+        grid-template-columns: 1.4fr 20fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 4vh;
+    }
+    
+    .size-para, .type-para{
+        font-size: 2vw;
+        font-weight: bold;
+    }
+
+    .size-selection, .type-selection{
+      display: flex;
+      gap: 1.3vw;
+    }
+
+    .size-button, .type-button {
+        border: 1px solid #6600ff;
+        color: #6600ff;
+        padding: 0.8vh 0.8vw;
+        border-radius: 4px;
+        font-size: 1.5vw;
+    }
+    
+    .size-button:hover , .type-button:hover {
+        border: none;
+        color: white;
+        background-color: #6600ff;
+        padding: 0.8vh 0.8vw;
+        border-radius: 4px;
+        font-size: 1.5vw;
+    }
+
+    .pro-cards-container{
+        display: grid;
+        grid-template-columns: repeat(3, 25.3vw);
+    }
+
+    .bestseller-text{
+        font-size: 1.3vw;
+    }
+
+    .card-pro-info{
+        font-size: 1.8vw;
+    }
+
+    .card-pro-feature-1, .card-pro-feature-2, .card-pro-feature-3{
+        margin-top: 1.2vh;     
+        font-size: 1.3vw;
+     }
+
+     .size-button-1, .size-button-2, .size-button-3{
+        font-size: 1.3vw;
+     }
+
+     .price{
+        font-size: 2.8vw;
+    }
+
+    .price-previous{
+        font-size: 1.4vw;
+    }
+
+    .discount{
+        font-size: 1.2vw;
+    }
+
+    .card-pro-best-price-button{
+        background-color: #f4edfd;
+        margin-bottom: 1.2vw;
+        margin-top: 2vh;
+        margin-right: 1.2vw;
+        border-radius: 2px;
+    }
+    
+    .best-price-button{
+        font-size: 1.5vw;
+        background-color: #f4edfd;
+        border: none;
+        color: #6600ff;
+        padding: 1.2vh 3.4vw;
+        margin-bottom: 0.2vh;
+    }
+
+    .search-img{
+        fill: #ffff;
+    }
+
+    .pro-cards-container1{
+        display: none;
+    }
+}
+
+@media (max-width : 768px){
+   
+    .coin-logo{
+        display: inline;
+     }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .navbar{
+         height: 10vh; 
+         display: grid;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+    }
+     
+    .search{
+        width: 50vw;
+        background-color: #f4edfd;
+        display: grid;
+        grid-template-columns: 1.5fr 10fr;
+        border-radius: 5px;
+    }
+
+    .pro-search{
+        height:8vh;
+        background-color: #f4edfd;
+        border: none;
+    }
+
+    .search-img{
+        fill: black;
+    }
+    
+    input::-webkit-input-placeholder { /* Chrome, Safari, Edge */
+        color: black;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    #header-offers-p-1{
+        font-size: 2.3vw;
+    }
+
+    .filter-container{
+        display: none;
+    }
+    
+    .features-container{
+        margin-left: 1%;
+        height: 15vh;
+        overflow: hidden;
+    }
+
+    .trial_img, .shipping-img, .warranty-img, .tape-img{
+        height: 4em;
+   }
+    
+   .features-img{
+    overflow: hidden;
+   }
+
+
+ /*-------------------------------------------*/
+  .pro-cards-container{
+   display: none;
+    }
+    
+    .footer-2-container{
+        display: none;
+    }
+    
+    .mattress-selection-body{
+        display: none;
+    }
+
+    .pro-cards-container1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        padding: 10px 10px;
+    }
+
+    .pro-card1{
+        background-color: white;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 160px 2fr ;
+        grid-template-rows: 1fr 20px 1.6fr 1fr 0.6fr 0.8fr;
+    }
+
+    .pro-img{
+        grid-row-start: 1;
+        grid-row-end: 4;
+        height: 140px;
+        width: 150px;
+        overflow: hidden;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .pro-image{
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .pro-name{
+        padding-top: 10px;
+        padding-left: 15px;
+        font-family: "Kanit", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .pro-review{
+        padding-left: 15px;
+        font-size: 0.8em;
+        display: flex;
+        align-items: center;
+    }
+
+    .pro-features11{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 10px;
+        font-family: "Kanit", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: gray;
+    }
+
+    .pro-feature-1, .pro-feature-2, .pro-feature-3{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        font-size: 0.7em;
+    }
+
+    .back1{
+        height: 15px;
+    }
+
+    .size-buttons{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-top: 10px;
+        border-top: 1px solid rgb(217, 217, 217);
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        column-gap: 10px;
+    }
+
+    .size-button1{
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    .pro-price{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        font-family: "Kanit", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .pro-best-price{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 2px 10px;
+    }
+    
+    .best-price-button{
+        background-color: #f1e8ff;
+        border-radius: 5px;
+    }
+
+    .testimonial-container, .testimonial-heading{
+        display: none;
+
+    }
+}
+
+
+
+
+
